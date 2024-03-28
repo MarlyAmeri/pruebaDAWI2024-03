@@ -26,7 +26,7 @@ public class Alumno {
 	private String correo;
 	@Temporal(TemporalType.DATE)
 	private Date fechaNacimiento;
-	
+	private String Medicamento;
 	
 	
 }

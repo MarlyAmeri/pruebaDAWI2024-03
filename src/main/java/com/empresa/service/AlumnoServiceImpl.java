@@ -29,5 +29,15 @@ public class AlumnoServiceImpl implements AlumnoService{
 		return repository.findByNombreLike(nombre);
 	}
 	
+	
+	@Override
+	public List<Alumno> listaAlumnoPorID(int idAlumno) {
+		return repository.findByIdAlumno(idAlumno);
+	}
+
+	@Override
+	public List<Alumno> listaAlumnoPorMedicamento(String medicamento) {
+		return repository.findByMedicamento(medicamento);
+	}
 
 }
